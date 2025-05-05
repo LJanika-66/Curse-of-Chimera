@@ -22,6 +22,9 @@ public class CurseOfTheChimeraModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(CurseOfTheChimeraModBlocks.BLOOD_BLOCK.get().asItem());
+			tabData.accept(CurseOfTheChimeraModItems.BLOOD.get());
+			tabData.accept(CurseOfTheChimeraModItems.SMELTEDBLOOD.get());
 			tabData.accept(CurseOfTheChimeraModItems.REALMOF_CHIMERA.get());
 		}
 	}

@@ -106,6 +106,21 @@
           "src/main/resources/assets/curse_of_the_chimera/models/block/realmof_chimera_portal_ew.json"
         ]
       }
+    },
+    {
+      "name": "MoribundForest",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moribund_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/moribund_forest_tree.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/biome/moribund_forest.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -120,7 +135,12 @@
     }
   ],
   "tag_elements": {
+    "BIOMES:minecraft:has_structure/ruined_portal_standard": [
+      "~CUSTOM:MoribundForest"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DEEPSLATE",
+      "~Blocks.GRASS",
       "~CUSTOM:BloodBlock"
     ]
   },
@@ -128,8 +148,9 @@
     "en_us": {
       "item.curse_of_the_chimera.blood": "Blood",
       "item.curse_of_the_chimera.realmof_chimera": "dick",
+      "biome.curse_of_the_chimera.moribund_forest": "Moribund Forest",
       "block.curse_of_the_chimera.blood_block": "Blood Block",
-      "item.curse_of_the_chimera.smeltedblood": "Smeltedblood",
+      "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
       "subtitles.lalah_ejedre": ""
     }
   },

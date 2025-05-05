@@ -7,10 +7,10 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Smeltedblood",
+    "name": "Smelted blood",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "TOOLS"
     },
     "stackSize": 64,
     "enchantability": 0,
