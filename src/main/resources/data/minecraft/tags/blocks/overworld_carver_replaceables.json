@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:dirt",
     "minecraft:stone",
     "minecraft:deepslate",
     "minecraft:grass_block",

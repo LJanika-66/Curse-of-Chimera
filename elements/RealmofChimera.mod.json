@@ -8,6 +8,9 @@
       },
       {
         "value": "CUSTOM:CherryGrove"
+      },
+      {
+        "value": "CUSTOM:EltorzultTisztas"
       }
     ],
     "worldGenType": "Normal world gen",
