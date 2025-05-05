@@ -121,6 +121,67 @@
           "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json"
         ]
       }
+    },
+    {
+      "name": "KasaneTetoEntityDies",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasane_teto_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/procedures/KasaneTetoEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KasaneTeto",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasane_teto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/client/renderer/KasaneTetoRenderer.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/item/kasane_teto_spawn_egg.json",
+          "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/kasane_teto_biome_modifier.json",
+          "src/main/java/net/mcreator/curseofthechimera/entity/KasaneTetoEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "KasaneTetoOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasane_teto_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/procedures/KasaneTetoOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -149,8 +210,10 @@
       "item.curse_of_the_chimera.blood": "Blood",
       "item.curse_of_the_chimera.realmof_chimera": "dick",
       "biome.curse_of_the_chimera.moribund_forest": "Moribund Forest",
+      "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
       "block.curse_of_the_chimera.blood_block": "Blood Block",
       "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
+      "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
       "subtitles.lalah_ejedre": ""
     }
   },

@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModTabs;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModSounds;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModItems;
+import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModEntities;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModBlocks;
 
 import java.util.function.Supplier;
@@ -45,6 +46,7 @@ public class CurseOfTheChimeraMod {
 		CurseOfTheChimeraModBlocks.REGISTRY.register(bus);
 
 		CurseOfTheChimeraModItems.REGISTRY.register(bus);
+		CurseOfTheChimeraModEntities.REGISTRY.register(bus);
 
 		CurseOfTheChimeraModTabs.REGISTRY.register(bus);
 

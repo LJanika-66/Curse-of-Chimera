@@ -7,6 +7,7 @@ package net.mcreator.curseofthechimera.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,7 @@ public class CurseOfTheChimeraModItems {
 	public static final RegistryObject<Item> BLOOD_BLOCK = block(CurseOfTheChimeraModBlocks.BLOOD_BLOCK);
 	public static final RegistryObject<Item> SMELTEDBLOOD = REGISTRY.register("smeltedblood", () -> new SmeltedbloodItem());
 	public static final RegistryObject<Item> REALMOF_CHIMERA = REGISTRY.register("realmof_chimera", () -> new RealmofChimeraItem());
+	public static final RegistryObject<Item> KASANE_TETO_SPAWN_EGG = REGISTRY.register("kasane_teto_spawn_egg", () -> new ForgeSpawnEggItem(CurseOfTheChimeraModEntities.KASANE_TETO, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
