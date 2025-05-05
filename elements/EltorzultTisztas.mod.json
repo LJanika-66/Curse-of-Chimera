@@ -2,30 +2,34 @@
   "_fv": 60,
   "_type": "biome",
   "definition": {
-    "name": "Cherry Grove",
+    "name": "Distorted Forest",
     "groundBlock": {
-      "value": "Blocks.GRASS"
-    },
-    "undergroundBlock": {
-      "value": "Blocks.STONE#0"
-    },
-    "underwaterBlock": {
       "value": "Blocks.DIRT#0"
     },
+    "undergroundBlock": {
+      "value": "CUSTOM:BloodBlock"
+    },
+    "underwaterBlock": {
+      "value": "CUSTOM:BloodBlock"
+    },
     "airColor": {
-      "value": -17448,
+      "value": -16747145,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -6237627,
+      "value": -16772331,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -17448,
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13421773,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -17448,
+      "value": -6710887,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -41,18 +45,18 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CHERRY_LEAVES"
+      "value": "EXPLOSION_NORMAL"
     },
-    "particlesProbability": 1.8,
+    "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
+      "min": -0.499,
       "max": 0.5
     },
     "genHumidity": {
@@ -71,18 +75,18 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 8,
-    "vanillaTreeType": "Default",
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 9,
+    "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.CHERRY_LOG"
+      "value": "Blocks.DARK_OAK_WOOD"
     },
     "treeBranch": {
-      "value": "Blocks.CHERRY_LEAVES"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": "Blocks.CHERRY_LEAVES"
+      "value": ""
     },
     "treeFruits": {
       "value": ""
@@ -90,9 +94,7 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "ForestFlowers",
-      "ForestGrass",
-      "ExtraEmeraldOre"
+      "FrozenTopLayer"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -113,62 +115,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityCat"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityFox"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityRabbit"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityGoat"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

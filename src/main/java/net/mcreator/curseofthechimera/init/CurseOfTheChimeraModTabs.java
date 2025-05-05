@@ -29,6 +29,7 @@ public class CurseOfTheChimeraModTabs {
 			tabData.accept(CurseOfTheChimeraModItems.BLOOD.get());
 			tabData.accept(CurseOfTheChimeraModItems.SMELTEDBLOOD.get());
 			tabData.accept(CurseOfTheChimeraModItems.REALMOF_CHIMERA.get());
+			tabData.accept(CurseOfTheChimeraModItems.BLOOD_FLUID_BUCKET.get());
 		}
 	}
 }

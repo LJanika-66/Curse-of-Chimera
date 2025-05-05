@@ -123,20 +123,6 @@
       }
     },
     {
-      "name": "KasaneTetoOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kasane_teto_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/curseofthechimera/procedures/KasaneTetoOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "KasaneTeto",
       "type": "livingentity",
       "sortid": 10,
@@ -156,7 +142,7 @@
       "name": "KasaneTetoEntityDies",
       "type": "procedure",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kasane_teto_entity_dies",
       "metadata": {
@@ -193,8 +179,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/cherry_blossoms_biome_modifier.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_blossoms.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_blossoms.json"
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_blossoms.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_blossoms.json"
         ]
       }
     },
@@ -202,17 +188,16 @@
       "name": "CherryGrove",
       "type": "biome",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cherry_grove",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveTrunkDecorator.java",
-          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveLeaveDecorator.java",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_grove_tree.json",
           "src/main/resources/data/curse_of_the_chimera/worldgen/biome/cherry_grove.json",
           "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_grove_tree.json",
-          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveFruitDecorator.java"
+          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveTrunkDecorator.java",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_grove_tree.json",
+          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveLeaveDecorator.java"
         ]
       }
     },
@@ -231,6 +216,76 @@
           "src/main/java/net/mcreator/curseofthechimera/entity/KasaneTetoV2Entity.java"
         ]
       }
+    },
+    {
+      "name": "EltorzultTisztas",
+      "type": "biome",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eltorzult_tisztas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/eltorzult_tisztas_tree.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/biome/eltorzult_tisztas.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/eltorzult_tisztas_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Bloodbuckedcraftingrecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodbuckedcraftingrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/recipes/bloodbuckedcraftingrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodFluid",
+      "type": "fluid",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_fluid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/fluid/BloodFluidFluid.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/block/blood_fluid.json",
+          "src/main/java/net/mcreator/curseofthechimera/item/BloodFluidItem.java",
+          "src/main/java/net/mcreator/curseofthechimera/block/BloodFluidBlock.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/item/blood_fluid_bucket.json",
+          "src/main/java/net/mcreator/curseofthechimera/fluid/types/BloodFluidFluidType.java",
+          "src/main/resources/assets/curse_of_the_chimera/blockstates/blood_fluid.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/procedures/BloodPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -245,6 +300,9 @@
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:BloodFluid"
+    ],
     "BIOMES:minecraft:has_structure/ruined_portal_standard": [
       "~CUSTOM:CherryGrove",
       "~CUSTOM:MoribundForest"

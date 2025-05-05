@@ -20,6 +20,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModTabs;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModSounds;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModItems;
+import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModFluids;
+import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModFluidTypes;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModEntities;
 import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModBlocks;
 
@@ -50,6 +52,8 @@ public class CurseOfTheChimeraMod {
 
 		CurseOfTheChimeraModTabs.REGISTRY.register(bus);
 
+		CurseOfTheChimeraModFluids.REGISTRY.register(bus);
+		CurseOfTheChimeraModFluidTypes.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

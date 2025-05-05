@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "Items.BUCKET"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      },
+      {
+        "value": "CUSTOM:Blood"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BloodFluid.bucket"
+    },
+    "name": "bloodbuckedcraftingrecipe",
+    "namespace": "mod"
+  }
+}

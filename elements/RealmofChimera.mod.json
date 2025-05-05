@@ -8,6 +8,9 @@
       },
       {
         "value": "CUSTOM:CherryGrove"
+      },
+      {
+        "value": "CUSTOM:EltorzultTisztas"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -15,7 +18,7 @@
       "value": "CUSTOM:BloodBlock"
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "CUSTOM:BloodFluid"
     },
     "airColor": {
       "value": -5892586,
