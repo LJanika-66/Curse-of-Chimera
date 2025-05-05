@@ -1,0 +1,45 @@
+{
+  "mod_elements": [
+    {
+      "name": "Blood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/item/BloodItem.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/item/blood.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "item.curse_of_the_chimera.blood": "Blood"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "curse_of_the_chimera",
+    "modName": "Curse of the Chimera",
+    "version": "1.0.0",
+    "author": "janik, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.curseofthechimera"
+  },
+  "mcreatorVersion": 202400118518
+}
