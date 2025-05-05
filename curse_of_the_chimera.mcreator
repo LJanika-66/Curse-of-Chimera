@@ -116,9 +116,9 @@
       "registry_name": "moribund_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/moribund_forest_tree.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json",
           "src/main/resources/data/curse_of_the_chimera/worldgen/biome/moribund_forest.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json"
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/moribund_forest_tree.json"
         ]
       }
     },
@@ -306,8 +306,8 @@
       "block.curse_of_the_chimera.blood_fluid": "Liquid Blood",
       "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
       "fluid.curse_of_the_chimera.blood_fluid": "Liquid Blood",
-      "item.curse_of_the_chimera.blood_fluid_bucket": "Blood Fluid Bucket",
       "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
+      "item.curse_of_the_chimera.blood_fluid_bucket": "Blood Fluid Bucket",
       "subtitles.lalah_ejedre": "",
       "item.curse_of_the_chimera.blood": "Blood",
       "biome.curse_of_the_chimera.eltorzult_tisztas": "Distorted Forest",
