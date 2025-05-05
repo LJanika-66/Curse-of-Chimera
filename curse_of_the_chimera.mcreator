@@ -116,9 +116,9 @@
       "registry_name": "moribund_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/moribund_forest_tree.json",
           "src/main/resources/data/curse_of_the_chimera/worldgen/biome/moribund_forest.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/moribund_forest_tree.json"
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json"
         ]
       }
     },
@@ -270,6 +270,22 @@
           "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/eltorzult_tisztas_tree.json"
         ]
       }
+    },
+    {
+      "name": "KasaneTetoV2",
+      "type": "livingentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasane_teto_v_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/client/renderer/KasaneTetoV2Renderer.java",
+          "src/main/java/net/mcreator/curseofthechimera/entity/KasaneTetoV2Entity.java",
+          "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/kasane_teto_v_2_biome_modifier.json",
+          "src/main/resources/assets/curse_of_the_chimera/models/item/kasane_teto_v_2_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -303,15 +319,10 @@
     "en_us": {
       "item.curse_of_the_chimera.realmof_chimera": "dick",
       "biome.curse_of_the_chimera.moribund_forest": "Moribund Forest",
-      "block.curse_of_the_chimera.blood_fluid": "Liquid Blood",
       "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
-      "fluid.curse_of_the_chimera.blood_fluid": "Liquid Blood",
       "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
-      "item.curse_of_the_chimera.blood_fluid_bucket": "Blood Fluid Bucket",
       "subtitles.lalah_ejedre": "",
       "item.curse_of_the_chimera.blood": "Blood",
-      "biome.curse_of_the_chimera.eltorzult_tisztas": "Distorted Forest",
-      "biome.curse_of_the_chimera.cherry_grove": "Cherry Grove",
       "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
       "block.curse_of_the_chimera.blood_block": "Smelted Blood Block"
     }

@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.curseofthechimera.entity.KasaneTetoV2Entity;
 import net.mcreator.curseofthechimera.entity.KasaneTetoEntity;
 import net.mcreator.curseofthechimera.CurseOfTheChimeraMod;
 
@@ -24,6 +25,10 @@ public class CurseOfTheChimeraModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CurseOfTheChimeraMod.MODID);
 	public static final RegistryObject<EntityType<KasaneTetoEntity>> KASANE_TETO = register("kasane_teto",
 			EntityType.Builder.<KasaneTetoEntity>of(KasaneTetoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(KasaneTetoEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KasaneTetoV2Entity>> KASANE_TETO_V_2 = register("kasane_teto_v_2",
+			EntityType.Builder.<KasaneTetoV2Entity>of(KasaneTetoV2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(KasaneTetoV2Entity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -35,11 +40,13 @@ public class CurseOfTheChimeraModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			KasaneTetoEntity.init();
+			KasaneTetoV2Entity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(KASANE_TETO.get(), KasaneTetoEntity.createAttributes().build());
+		event.put(KASANE_TETO_V_2.get(), KasaneTetoV2Entity.createAttributes().build());
 	}
 }

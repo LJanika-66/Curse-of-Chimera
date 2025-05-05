@@ -6,17 +6,19 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 
-public class KasaneTetoEntity extends PathfinderMob {
+public class KasaneTetoV2Entity extends PathfinderMob {
 
-	public KasaneTetoEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(CurseOfTheChimeraModEntities.KASANE_TETO.get(), world);
+	public KasaneTetoV2Entity(PlayMessages.SpawnEntity packet, Level world) {
+		this(CurseOfTheChimeraModEntities.KASANE_TETO_V_2.get(), world);
 	}
 
-	public KasaneTetoEntity(EntityType<KasaneTetoEntity> type, Level world) {
+	public KasaneTetoV2Entity(EntityType<KasaneTetoV2Entity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+
+		setPersistenceRequired();
 
 	}
 
@@ -29,15 +31,21 @@ public class KasaneTetoEntity extends PathfinderMob {
 	protected void registerGoals() {
 		super.registerGoals();
 
-		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ServerPlayer.class, false, true));
-		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 300));
-		this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, ServerPlayer.class, (float) 30, 1.2, 2));
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0));
+		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, (float) 20));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, true, true));
 
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override
@@ -63,6 +71,8 @@ public class KasaneTetoEntity extends PathfinderMob {
 			return false;
 		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
+		if (damagesource.is(DamageTypes.DROWN))
+			return false;
 		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
@@ -79,7 +89,7 @@ public class KasaneTetoEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(CurseOfTheChimeraModEntities.KASANE_TETO.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(CurseOfTheChimeraModEntities.KASANE_TETO_V_2.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 
 	}
