@@ -4,25 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "cherry_grove"
-      },
-      {
-        "value": "beaches"
-      },
-      {
-        "value": "crimson_forest"
-      },
-      {
-        "value": "deep_dark"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "deep_cold_ocean"
-      },
-      {
         "value": "CUSTOM:MoribundForest"
+      },
+      {
+        "value": "CUSTOM:CherryGrove"
       }
     ],
     "worldGenType": "Normal world gen",

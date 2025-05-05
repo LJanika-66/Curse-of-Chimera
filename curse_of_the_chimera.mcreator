@@ -121,6 +121,39 @@
           "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/moribund_forest_tree.json"
         ]
       }
+    },
+    {
+      "name": "CherryGrove",
+      "type": "biome",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_grove",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/worldgen/biome/cherry_grove.json",
+          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveFruitDecorator.java",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_grove_tree.json",
+          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveTrunkDecorator.java",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_grove_tree.json",
+          "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveLeaveDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "CherryBlossoms",
+      "type": "feature",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_blossoms",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/cherry_blossoms_biome_modifier.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_blossoms.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_blossoms.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -136,9 +169,11 @@
   ],
   "tag_elements": {
     "BIOMES:minecraft:has_structure/ruined_portal_standard": [
+      "~CUSTOM:CherryGrove",
       "~CUSTOM:MoribundForest"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
       "~Blocks.DEEPSLATE",
       "~Blocks.GRASS",
       "~CUSTOM:BloodBlock"
@@ -149,6 +184,7 @@
       "item.curse_of_the_chimera.blood": "Blood",
       "item.curse_of_the_chimera.realmof_chimera": "dick",
       "biome.curse_of_the_chimera.moribund_forest": "Moribund Forest",
+      "biome.curse_of_the_chimera.cherry_grove": "Cherry Grove",
       "block.curse_of_the_chimera.blood_block": "Blood Block",
       "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
       "subtitles.lalah_ejedre": ""

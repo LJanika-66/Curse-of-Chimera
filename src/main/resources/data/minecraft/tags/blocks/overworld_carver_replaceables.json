@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:stone",
     "minecraft:deepslate",
     "minecraft:grass_block",
     "curse_of_the_chimera:blood_block"
