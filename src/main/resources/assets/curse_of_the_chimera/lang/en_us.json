@@ -4,11 +4,12 @@
   "block.curse_of_the_chimera.blood_fluid": "Liquid Blood",
   "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
   "fluid.curse_of_the_chimera.blood_fluid": "Liquid Blood",
-  "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
   "item.curse_of_the_chimera.blood_fluid_bucket": "Blood Fluid Bucket",
+  "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
   "subtitles.lalah_ejedre": "",
   "item.curse_of_the_chimera.blood": "Blood",
   "item.curse_of_the_chimera.kasane_teto_v_2_spawn_egg": "Kasane TetoV2 Spawn Egg",
+  "biome.curse_of_the_chimera.cherry_grove": "Cherry Grove",
   "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
   "block.curse_of_the_chimera.blood_block": "Blood Block",
   "entity.curse_of_the_chimera.kasane_teto_v_2": "Kasane TetoV2"

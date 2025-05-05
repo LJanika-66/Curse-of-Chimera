@@ -63,12 +63,12 @@
           "biome": "curse_of_the_chimera:eltorzult_tisztas",
           "parameters": {
             "temperature": [
-              -0.499,
-              0.5
+              0,
+              0.7
             ],
             "humidity": [
               -0.5,
-              0.5
+              1
             ],
             "continentalness": [
               0.3,
