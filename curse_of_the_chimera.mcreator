@@ -3,6 +3,7 @@
     {
       "name": "Blood",
       "type": "item",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blood",
@@ -12,14 +13,124 @@
           "src/main/resources/assets/curse_of_the_chimera/models/item/blood.json"
         ]
       }
+    },
+    {
+      "name": "BloodBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/curse_of_the_chimera/models/item/blood_block.json",
+          "src/main/resources/assets/curse_of_the_chimera/models/block/blood_block.json",
+          "src/main/resources/assets/curse_of_the_chimera/blockstates/blood_block.json",
+          "src/main/resources/data/curse_of_the_chimera/loot_tables/blocks/blood_block.json",
+          "src/main/java/net/mcreator/curseofthechimera/block/BloodBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Smeltedblood",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smeltedblood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/curse_of_the_chimera/models/item/smeltedblood.json",
+          "src/main/java/net/mcreator/curseofthechimera/item/SmeltedbloodItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodtoBlock",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodto_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/recipes/bloodto_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockToBlood",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_to_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/recipes/block_to_blood.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodSmellting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_smellting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curse_of_the_chimera/recipes/blood_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "RealmofChimera",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "realmof_chimera",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/curseofthechimera/block/RealmofChimeraPortalBlock.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/block/realmof_chimera_portal_ns.json",
+          "src/main/resources/assets/curse_of_the_chimera/blockstates/realmof_chimera_portal.json",
+          "src/main/java/net/mcreator/curseofthechimera/item/RealmofChimeraItem.java",
+          "src/main/java/net/mcreator/curseofthechimera/world/teleporter/RealmofChimeraTeleporter.java",
+          "src/main/resources/data/curse_of_the_chimera/dimension_type/realmof_chimera.json",
+          "src/main/java/net/mcreator/curseofthechimera/world/teleporter/RealmofChimeraPortalShape.java",
+          "src/main/java/net/mcreator/curseofthechimera/world/dimension/RealmofChimeraDimension.java",
+          "src/main/resources/assets/curse_of_the_chimera/models/item/realmof_chimera.json",
+          "src/main/resources/data/curse_of_the_chimera/dimension/realmof_chimera.json",
+          "src/main/resources/assets/curse_of_the_chimera/models/block/realmof_chimera_portal_ew.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
-  "tag_elements": {},
+  "sound_elements": [
+    {
+      "name": "lalah_ejedre",
+      "files": [
+        "lalah_ejedre"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:BloodBlock"
+    ]
+  },
   "language_map": {
     "en_us": {
-      "item.curse_of_the_chimera.blood": "Blood"
+      "item.curse_of_the_chimera.blood": "Blood",
+      "item.curse_of_the_chimera.realmof_chimera": "dick",
+      "block.curse_of_the_chimera.blood_block": "Blood Block",
+      "item.curse_of_the_chimera.smeltedblood": "Smeltedblood",
+      "subtitles.lalah_ejedre": ""
     }
   },
   "foldersRoot": {

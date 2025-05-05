@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "curse_of_the_chimera:smeltedblood"
+    },
+    {
+      "item": "curse_of_the_chimera:smeltedblood"
+    },
+    {
+      "item": "curse_of_the_chimera:smeltedblood"
+    },
+    {
+      "item": "curse_of_the_chimera:smeltedblood"
+    }
+  ],
+  "result": {
+    "item": "curse_of_the_chimera:blood_block",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "curse_of_the_chimera:item/blood"
+    "layer0": "curse_of_the_chimera:item/chimerablood"
   }
 }

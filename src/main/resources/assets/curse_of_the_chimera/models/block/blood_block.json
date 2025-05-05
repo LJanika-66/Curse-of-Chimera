@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "curse_of_the_chimera:block/chimera_blood_block",
+    "up": "curse_of_the_chimera:block/chimera_blood_block",
+    "north": "curse_of_the_chimera:block/chimera_blood_block",
+    "east": "curse_of_the_chimera:block/chimera_blood_block",
+    "south": "curse_of_the_chimera:block/chimera_blood_block",
+    "west": "curse_of_the_chimera:block/chimera_blood_block",
+    "particle": "curse_of_the_chimera:block/chimera_blood_block"
+  },
+  "render_type": "solid"
+}

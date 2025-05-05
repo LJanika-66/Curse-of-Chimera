@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1.5,
+  "cookingtime": 500,
+  "ingredient": {
+    "item": "curse_of_the_chimera:blood"
+  },
+  "result": "curse_of_the_chimera:smeltedblood"
+}

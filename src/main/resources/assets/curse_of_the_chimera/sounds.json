@@ -1,0 +1,10 @@
+{
+  "lalah_ejedre": {
+    "sounds": [
+      {
+        "name": "curse_of_the_chimera:lalah_ejedre",
+        "stream": true
+      }
+    ]
+  }
+}

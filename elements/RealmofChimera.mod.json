@@ -1,0 +1,62 @@
+{
+  "_fv": 60,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "cherry_grove"
+      },
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "deep_dark"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "deep_cold_ocean"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:BloodBlock"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "DENY",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:BloodBlock"
+    },
+    "portalParticles": {
+      "value": "DRIP_LAVA"
+    },
+    "portalLuminance": 15,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": true,
+    "igniterName": "dick",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "dick",
+    "portalTexture": "chimera_blood_block",
+    "enablePortal": true
+  }
+}

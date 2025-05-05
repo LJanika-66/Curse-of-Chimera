@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "curse_of_the_chimera:block/realmof_chimera_portal_ew"
+    },
+    "axis=x": {
+      "model": "curse_of_the_chimera:block/realmof_chimera_portal_ns"
+    }
+  }
+}
