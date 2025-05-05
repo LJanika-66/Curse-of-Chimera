@@ -15,7 +15,7 @@
       "value": "CUSTOM:BloodBlock"
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "CUSTOM:BloodFluid"
     },
     "airColor": {
       "value": -5892586,

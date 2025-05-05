@@ -72,7 +72,7 @@
         "Name": "curse_of_the_chimera:blood_block"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
+        "Name": "curse_of_the_chimera:blood_fluid",
         "Properties": {
           "level": "0"
         }

@@ -1,13 +1,38 @@
 
 package net.mcreator.curseofthechimera.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.curseofthechimera.procedures.KasaneTetoEntityDiesProcedure;
+import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModEntities;
 
 public class KasaneTetoEntity extends PathfinderMob {
-
 	public KasaneTetoEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(CurseOfTheChimeraModEntities.KASANE_TETO.get(), world);
 	}
@@ -17,7 +42,6 @@ public class KasaneTetoEntity extends PathfinderMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-
 	}
 
 	@Override
@@ -28,11 +52,9 @@ public class KasaneTetoEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
-		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, Player.class, (float) 25, 1, 1.2));
-
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ServerPlayer.class, false, true));
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 300));
+		this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, ServerPlayer.class, (float) 30, 1.2, 2));
 	}
 
 	@Override
@@ -75,13 +97,12 @@ public class KasaneTetoEntity extends PathfinderMob {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		KasaneTetoEntityDiesProcedure.execute();
+		KasaneTetoEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	public static void init() {
 		SpawnPlacements.register(CurseOfTheChimeraModEntities.KASANE_TETO.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -91,10 +112,7 @@ public class KasaneTetoEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
-
 		return builder;
 	}
-
 }

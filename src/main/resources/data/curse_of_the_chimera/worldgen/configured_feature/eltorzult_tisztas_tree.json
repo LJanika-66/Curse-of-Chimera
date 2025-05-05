@@ -7,18 +7,18 @@
       "type": "minecraft:two_layers_feature_size",
       "limit": 1,
       "lower_size": 0,
-      "upper_size": 1
+      "upper_size": 2
     },
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:stone"
+        "Name": "curse_of_the_chimera:blood_block"
       }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:cherry_log",
+        "Name": "minecraft:dark_oak_wood",
         "Properties": {
           "axis": "y"
         }
@@ -27,33 +27,20 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:cherry_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Name": "minecraft:air"
       }
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
-      "base_height": 9,
+      "type": "minecraft:forking_trunk_placer",
+      "base_height": 7,
       "height_rand_a": 2,
-      "height_rand_b": 0
+      "height_rand_b": 2
     },
     "foliage_placer": {
-      "type": "minecraft:blob_foliage_placer",
+      "type": "minecraft:acacia_foliage_placer",
       "radius": 2,
-      "offset": 0,
-      "height": 3
+      "offset": 0
     },
-    "decorators": [
-      {
-        "type": "curse_of_the_chimera:cherry_grove_tree_trunk_decorator"
-      },
-      {
-        "type": "curse_of_the_chimera:cherry_grove_tree_leave_decorator"
-      }
-    ]
+    "decorators": []
   }
 }
