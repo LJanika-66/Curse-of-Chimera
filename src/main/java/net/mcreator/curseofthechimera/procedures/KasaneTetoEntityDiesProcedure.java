@@ -1,13 +1,6 @@
 package net.mcreator.curseofthechimera.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-
-import net.mcreator.curseofthechimera.init.CurseOfTheChimeraModItems;
+import net.minecraftforge.eventbus.api.Event;
 
 public class KasaneTetoEntityDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
