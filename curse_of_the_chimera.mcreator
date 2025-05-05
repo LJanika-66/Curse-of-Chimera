@@ -126,7 +126,7 @@
       "name": "KasaneTeto",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kasane_teto",
       "metadata": {
@@ -188,7 +188,7 @@
       "name": "CherryGrove",
       "type": "biome",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cherry_grove",
       "metadata": {
@@ -205,7 +205,7 @@
       "name": "KasaneTetoV2",
       "type": "livingentity",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kasane_teto_v_2",
       "metadata": {
@@ -249,7 +249,7 @@
       "name": "BloodFluid",
       "type": "fluid",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "blood_fluid",
       "metadata": {
@@ -320,8 +320,8 @@
       "block.curse_of_the_chimera.blood_fluid": "Liquid Blood",
       "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
       "fluid.curse_of_the_chimera.blood_fluid": "Liquid Blood",
-      "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
       "item.curse_of_the_chimera.blood_fluid_bucket": "Blood Fluid Bucket",
+      "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
       "subtitles.lalah_ejedre": "",
       "item.curse_of_the_chimera.blood": "Blood",
       "item.curse_of_the_chimera.kasane_teto_v_2_spawn_egg": "Kasane TetoV2 Spawn Egg",
