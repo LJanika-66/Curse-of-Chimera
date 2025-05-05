@@ -1,8 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "curse_of_the_chimera:cherry_grove",
   "features": "curse_of_the_chimera:cherry_blossoms",
   "step": "surface_structures"
 }

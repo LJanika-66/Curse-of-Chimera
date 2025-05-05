@@ -23,6 +23,7 @@ public class CurseOfTheChimeraModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CurseOfTheChimeraModItems.KASANE_TETO_SPAWN_EGG.get());
+			tabData.accept(CurseOfTheChimeraModItems.KASANE_TETO_V_2_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CurseOfTheChimeraModBlocks.BLOOD_BLOCK.get().asItem());
 			tabData.accept(CurseOfTheChimeraModItems.BLOOD.get());

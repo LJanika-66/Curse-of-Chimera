@@ -25,6 +25,7 @@ public class CurseOfTheChimeraModItems {
 	public static final RegistryObject<Item> SMELTEDBLOOD = REGISTRY.register("smeltedblood", () -> new SmeltedbloodItem());
 	public static final RegistryObject<Item> REALMOF_CHIMERA = REGISTRY.register("realmof_chimera", () -> new RealmofChimeraItem());
 	public static final RegistryObject<Item> KASANE_TETO_SPAWN_EGG = REGISTRY.register("kasane_teto_spawn_egg", () -> new ForgeSpawnEggItem(CurseOfTheChimeraModEntities.KASANE_TETO, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> KASANE_TETO_V_2_SPAWN_EGG = REGISTRY.register("kasane_teto_v_2_spawn_egg", () -> new ForgeSpawnEggItem(CurseOfTheChimeraModEntities.KASANE_TETO_V_2, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -145,9 +145,9 @@
       "registry_name": "kasane_teto",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/curseofthechimera/client/renderer/KasaneTetoRenderer.java",
           "src/main/resources/assets/curse_of_the_chimera/models/item/kasane_teto_spawn_egg.json",
           "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/kasane_teto_biome_modifier.json",
+          "src/main/java/net/mcreator/curseofthechimera/client/renderer/KasaneTetoRenderer.java",
           "src/main/java/net/mcreator/curseofthechimera/entity/KasaneTetoEntity.java"
         ]
       }
@@ -156,7 +156,7 @@
       "name": "KasaneTetoEntityDies",
       "type": "procedure",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kasane_teto_entity_dies",
       "metadata": {
@@ -193,8 +193,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/cherry_blossoms_biome_modifier.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_blossoms.json",
-          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_blossoms.json"
+          "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_blossoms.json",
+          "src/main/resources/data/curse_of_the_chimera/worldgen/configured_feature/cherry_blossoms.json"
         ]
       }
     },
@@ -202,7 +202,7 @@
       "name": "CherryGrove",
       "type": "biome",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cherry_grove",
       "metadata": {
@@ -213,6 +213,22 @@
           "src/main/resources/data/curse_of_the_chimera/worldgen/biome/cherry_grove.json",
           "src/main/resources/data/curse_of_the_chimera/worldgen/placed_feature/cherry_grove_tree.json",
           "src/main/java/net/mcreator/curseofthechimera/world/features/treedecorators/CherryGroveFruitDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "KasaneTetoV2",
+      "type": "livingentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kasane_teto_v_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/curse_of_the_chimera/models/item/kasane_teto_v_2_spawn_egg.json",
+          "src/main/java/net/mcreator/curseofthechimera/client/renderer/KasaneTetoV2Renderer.java",
+          "src/main/resources/data/curse_of_the_chimera/forge/biome_modifier/kasane_teto_v_2_biome_modifier.json",
+          "src/main/java/net/mcreator/curseofthechimera/entity/KasaneTetoV2Entity.java"
         ]
       }
     }
@@ -242,11 +258,15 @@
   "language_map": {
     "en_us": {
       "item.curse_of_the_chimera.blood": "Blood",
+      "item.curse_of_the_chimera.kasane_teto_v_2_spawn_egg": "Kasane TetoV2 Spawn Egg",
       "item.curse_of_the_chimera.realmof_chimera": "dick",
       "biome.curse_of_the_chimera.moribund_forest": "Moribund Forest",
+      "item.curse_of_the_chimera.kasane_teto_spawn_egg": "Kasane Teto Spawn Egg",
       "block.curse_of_the_chimera.blood_block": "Blood Block",
       "item.curse_of_the_chimera.smeltedblood": "Smelted blood",
-      "subtitles.lalah_ejedre": ""
+      "entity.curse_of_the_chimera.kasane_teto": "Kasane Teto",
+      "subtitles.lalah_ejedre": "",
+      "entity.curse_of_the_chimera.kasane_teto_v_2": "Kasane TetoV2"
     }
   },
   "foldersRoot": {
